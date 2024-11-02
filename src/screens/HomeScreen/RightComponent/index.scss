@@ -1,0 +1,76 @@
+.right-container {
+    background-color: white;
+    padding: 20px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        border-bottom: 2px solid black;
+        .add-folder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        .title {
+            font-weight: 600;
+            font-size: 30px;
+            span{
+                font-weight: 400;
+            }
+        }
+    }
+    .folder-container{
+        .folder-header{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            padding: 15px 0;
+            .folder-header-item{
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                button{
+                    background-color: white;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .cards-container{
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            .card{
+                display: flex;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px gray;
+                cursor: pointer;
+                //border: 2px solid red;
+                width: 45%;
+                gap: 10px;
+                justify-content: space-between;
+                align-items: center;
+                padding: 12px;
+                transition-duration: 0.3s;
+                .title-container{
+                    display: flex;
+                    flex-direction: column;
+                   cursor: pointer;
+                }
+                img{
+                    width: 50px;
+                }
+            }
+            .card:hover{
+                //box-shadow: 2px 2px 15px gray;
+                outline: 2px solid white;
+            }
+        }
+    }
+}
